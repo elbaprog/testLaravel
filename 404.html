@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-        // Parse the URL's path and redirect to the main entry point
-        const path = location.pathname;
+        // Redirect to the main entry point with the path after the hash
+        const path = location.pathname.replace('/testLaravel', '');
         location.replace("/testLaravel/#" + path);
     </script>
+
 </head>
 
 <body>
